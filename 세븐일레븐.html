@@ -27,12 +27,9 @@
         #quick{
             position: fixed;
             right: 0;
-            width: 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            top: 0;
-            bottom: 0;
+            width: 50px;
+            top:50%;
+            transform: translateY(-50%);
         }
         #quick li {
             width:200px;
@@ -41,13 +38,14 @@
         #quick li a{
             display: block;
             transition: 0.5s;
+            padding: 10px 10px;
         }
-        #quick li:hover a {
-            margin-left: -120px;
+        #quick li:hover a {           
+            transform: translateX(-50%);
             background-color: red;
         }
         #quick li i{
-            width: 80px;
+            width: 40px;
             display: inline-block;
         }
         #quick li:nth-child(2) a {
@@ -66,7 +64,6 @@
     </style>
 </head>
 <body>
-    <iframe width="560" height="500" src="https://www.youtube.com/embed/RWRm1vHZN8A?si=FfMj66WMzSvHErph" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
      <aside id="quick">
         <ul>
                 <li><a href=""><i class="bi bi-github"></i><strong>깃</strong></a></li>
